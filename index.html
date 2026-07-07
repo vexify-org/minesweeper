@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minesweeper - 扫雷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>扫雷 (Minesweeper)</h1>
+
+    <section class="controls">
+      <label>行: <input id="rows" type="number" min="5" max="30" value="9"></label>
+      <label>列: <input id="cols" type="number" min="5" max="30" value="9"></label>
+      <label>雷数: <input id="mines" type="number" min="1" value="10"></label>
+      <button id="start">开始游戏</button>
+      <div class="status">
+        <span>剩余雷: <strong id="remaining">10</strong></span>
+        <span>时间: <strong id="time">0</strong>s</span>
+      </div>
+    </section>
+
+    <div id="board" class="board" aria-label="扫雷棋盘"></div>
+
+    <footer>
+      <p>右键插旗，左键打开方块。第一次左键点击时开始计时。</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
